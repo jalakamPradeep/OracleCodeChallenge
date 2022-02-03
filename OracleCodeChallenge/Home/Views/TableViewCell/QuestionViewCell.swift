@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 // the view configuration of QuestionViewCell
-class QuestionViewCell: UITableViewCell {
+final class QuestionViewCell: UITableViewCell {
     // MARK: Outlets
     @IBOutlet weak var questionTitle: UILabel!
     @IBOutlet weak var questionTags: UILabel!
@@ -28,6 +28,7 @@ class QuestionViewCell: UITableViewCell {
         questionViews.setTitle(item.view_count.roundedWithAbbreviations, for: .normal)
         questionComments.setTitle(String(item.answer_count), for: .normal)
         questionUpvote.setTitle(String(item.score), for: .normal)
+        
     }
     
     

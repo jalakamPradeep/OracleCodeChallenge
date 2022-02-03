@@ -33,6 +33,7 @@ class NetworkManager {
                 return promise(.failure(NetworkError.invalidURL))
             }
             //web service call to fetch data
+            
             URLSession.shared.dataTaskPublisher(for: url)
                 .tryMap { (data, response) -> Data in
                     //pattern matching operator to check if i have valid response

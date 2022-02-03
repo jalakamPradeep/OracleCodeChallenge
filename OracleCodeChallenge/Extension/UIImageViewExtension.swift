@@ -19,3 +19,17 @@ import UIKit
         }
     }
 }
+
+extension UIImageView {
+    // this extension is used to lazyload the image from url
+    func lazyLoadImage(link:URL, contentMode: UIView.ContentMode) {
+        URLSession.shared.dataTask( with: link, completionHandler: {
+            (data, response, error) -> Void in
+            
+            DispatchQueue.main.async {
+                self.contentMode =  contentMode
+                if let data = data { self.image = UIImage(data: data) }
+            }
+        }).resume()
+    }
+}

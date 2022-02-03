@@ -8,13 +8,12 @@
 import Foundation
 import Combine
 
-class HomeViewModel: ObservableObject {
+final class HomeViewModel: ObservableObject {
 
     private var cancellables = Set<AnyCancellable>()
     @Published var items:[Item] = []
     @Published var errorString = String()
-    func getHomeData(getItemCount: Int) {
-        let baseUrl = "https://api.stackexchange.com/2.2/questions?site=stackoverflow&order=desc&sort=votes&tagged=swiftui&pagesize="+"\(getItemCount)"
+    func getHomeData(baseUrl: String) {
         NetworkManager.shared.getData(baseUrl: baseUrl, endpoint: .items, type: Items.self)
             .sink { [weak self] completion in
                 switch completion {

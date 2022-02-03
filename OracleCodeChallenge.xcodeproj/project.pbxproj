@@ -123,6 +123,8 @@
 		0272021727AB991F002A17F0 /* OracleCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				0272026D27AC4392002A17F0 /* Generic Modal */,
+				0272026C27AC4370002A17F0 /* GenericViewModal */,
 				0272025F27ABC03B002A17F0 /* Manager */,
 				0272025C27ABBAA8002A17F0 /* Extension */,
 				0272024827AB9BFB002A17F0 /* Home */,
@@ -156,9 +158,7 @@
 		0272024827AB9BFB002A17F0 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				0272024C27AB9C38002A17F0 /* ViewModel */,
 				0272024B27AB9C28002A17F0 /* Views */,
-				0272024A27AB9C21002A17F0 /* Model */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -166,20 +166,9 @@
 		0272024927AB9C03002A17F0 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				0272024F27AB9C55002A17F0 /* ViewModel */,
-				0272024E27AB9C4E002A17F0 /* Model */,
 				0272024D27AB9C49002A17F0 /* Views */,
 			);
 			path = Detail;
-			sourceTree = "<group>";
-		};
-		0272024A27AB9C21002A17F0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				0272026227ABC2E2002A17F0 /* Items.swift */,
-				0272026427ABC337002A17F0 /* Owner.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		0272024B27AB9C28002A17F0 /* Views */ = {
@@ -192,14 +181,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		0272024C27AB9C38002A17F0 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				0272026627ABC60A002A17F0 /* HomeViewModal.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		0272024D27AB9C49002A17F0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,20 +188,6 @@
 				0272025527ABB652002A17F0 /* QuestionViewController.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		0272024E27AB9C4E002A17F0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		0272024F27AB9C55002A17F0 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		0272025027AB9E69002A17F0 /* TableViewCell */ = {
@@ -257,6 +224,23 @@
 				0272026027ABC068002A17F0 /* NetworkManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		0272026C27AC4370002A17F0 /* GenericViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				0272026627ABC60A002A17F0 /* HomeViewModal.swift */,
+			);
+			path = GenericViewModal;
+			sourceTree = "<group>";
+		};
+		0272026D27AC4392002A17F0 /* Generic Modal */ = {
+			isa = PBXGroup;
+			children = (
+				0272026227ABC2E2002A17F0 /* Items.swift */,
+				0272026427ABC337002A17F0 /* Owner.swift */,
+			);
+			path = "Generic Modal";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
