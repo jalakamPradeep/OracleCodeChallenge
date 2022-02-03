@@ -16,6 +16,12 @@
 		0272023027AB9922002A17F0 /* OracleCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272022F27AB9922002A17F0 /* OracleCodeChallengeTests.swift */; };
 		0272023A27AB9922002A17F0 /* OracleCodeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272023927AB9922002A17F0 /* OracleCodeChallengeUITests.swift */; };
 		0272023C27AB9922002A17F0 /* OracleCodeChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272023B27AB9922002A17F0 /* OracleCodeChallengeUITestsLaunchTests.swift */; };
+		0272025227AB9EA2002A17F0 /* QuestionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272025127AB9EA2002A17F0 /* QuestionViewCell.swift */; };
+		0272025427AB9EBF002A17F0 /* QuestionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0272025327AB9EBF002A17F0 /* QuestionViewCell.xib */; };
+		0272025627ABB652002A17F0 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272025527ABB652002A17F0 /* QuestionViewController.swift */; };
+		0272025927ABB77C002A17F0 /* QuestionDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272025827ABB77C002A17F0 /* QuestionDescriptionCell.swift */; };
+		0272025B27ABB78E002A17F0 /* QuestionDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0272025A27ABB78E002A17F0 /* QuestionDescriptionCell.xib */; };
+		0272025E27ABBAF3002A17F0 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272025D27ABBAF3002A17F0 /* UIImageViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		0272023527AB9922002A17F0 /* OracleCodeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OracleCodeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0272023927AB9922002A17F0 /* OracleCodeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracleCodeChallengeUITests.swift; sourceTree = "<group>"; };
 		0272023B27AB9922002A17F0 /* OracleCodeChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracleCodeChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0272025127AB9EA2002A17F0 /* QuestionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewCell.swift; sourceTree = "<group>"; };
+		0272025327AB9EBF002A17F0 /* QuestionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionViewCell.xib; sourceTree = "<group>"; };
+		0272025527ABB652002A17F0 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		0272025827ABB77C002A17F0 /* QuestionDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDescriptionCell.swift; sourceTree = "<group>"; };
+		0272025A27ABB78E002A17F0 /* QuestionDescriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionDescriptionCell.xib; sourceTree = "<group>"; };
+		0272025D27ABBAF3002A17F0 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +111,11 @@
 		0272021727AB991F002A17F0 /* OracleCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				0272025C27ABBAA8002A17F0 /* Extension */,
+				0272024827AB9BFB002A17F0 /* Home */,
+				0272024927AB9C03002A17F0 /* Detail */,
 				0272021827AB991F002A17F0 /* AppDelegate.swift */,
 				0272021A27AB991F002A17F0 /* SceneDelegate.swift */,
-				0272021C27AB991F002A17F0 /* ViewController.swift */,
-				0272021E27AB991F002A17F0 /* Main.storyboard */,
 				0272022127AB9921002A17F0 /* Assets.xcassets */,
 				0272022327AB9921002A17F0 /* LaunchScreen.storyboard */,
 				0272022627AB9922002A17F0 /* Info.plist */,
@@ -125,6 +138,99 @@
 				0272023B27AB9922002A17F0 /* OracleCodeChallengeUITestsLaunchTests.swift */,
 			);
 			path = OracleCodeChallengeUITests;
+			sourceTree = "<group>";
+		};
+		0272024827AB9BFB002A17F0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0272024C27AB9C38002A17F0 /* ViewModel */,
+				0272024B27AB9C28002A17F0 /* Views */,
+				0272024A27AB9C21002A17F0 /* Model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0272024927AB9C03002A17F0 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				0272024F27AB9C55002A17F0 /* ViewModel */,
+				0272024E27AB9C4E002A17F0 /* Model */,
+				0272024D27AB9C49002A17F0 /* Views */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		0272024A27AB9C21002A17F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0272024B27AB9C28002A17F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0272025027AB9E69002A17F0 /* TableViewCell */,
+				0272021C27AB991F002A17F0 /* ViewController.swift */,
+				0272021E27AB991F002A17F0 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0272024C27AB9C38002A17F0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0272024D27AB9C49002A17F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0272025727ABB6A8002A17F0 /* TableViewCells */,
+				0272025527ABB652002A17F0 /* QuestionViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0272024E27AB9C4E002A17F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0272024F27AB9C55002A17F0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0272025027AB9E69002A17F0 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0272025127AB9EA2002A17F0 /* QuestionViewCell.swift */,
+				0272025327AB9EBF002A17F0 /* QuestionViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		0272025727ABB6A8002A17F0 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				0272025827ABB77C002A17F0 /* QuestionDescriptionCell.swift */,
+				0272025A27ABB78E002A17F0 /* QuestionDescriptionCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		0272025C27ABBAA8002A17F0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0272025D27ABBAF3002A17F0 /* UIImageViewExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +337,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0272025B27ABB78E002A17F0 /* QuestionDescriptionCell.xib in Resources */,
+				0272025427AB9EBF002A17F0 /* QuestionViewCell.xib in Resources */,
 				0272022527AB9921002A17F0 /* LaunchScreen.storyboard in Resources */,
 				0272022227AB9921002A17F0 /* Assets.xcassets in Resources */,
 				0272022027AB991F002A17F0 /* Main.storyboard in Resources */,
@@ -258,6 +366,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0272025227AB9EA2002A17F0 /* QuestionViewCell.swift in Sources */,
+				0272025E27ABBAF3002A17F0 /* UIImageViewExtension.swift in Sources */,
+				0272025627ABB652002A17F0 /* QuestionViewController.swift in Sources */,
+				0272025927ABB77C002A17F0 /* QuestionDescriptionCell.swift in Sources */,
 				0272021D27AB991F002A17F0 /* ViewController.swift in Sources */,
 				0272021927AB991F002A17F0 /* AppDelegate.swift in Sources */,
 				0272021B27AB991F002A17F0 /* SceneDelegate.swift in Sources */,

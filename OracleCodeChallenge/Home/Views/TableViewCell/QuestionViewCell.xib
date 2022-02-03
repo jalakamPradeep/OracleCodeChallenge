@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="QuestionViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="QuestionViewCell" rowHeight="440" id="eGn-QW-sNr" customClass="QuestionViewCell" customModule="OracleCodeChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="643" height="440"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eGn-QW-sNr" id="j6c-9M-guY">
+                <rect key="frame" x="0.0" y="0.0" width="614.5" height="440"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="izZ-wT-8Ea">
+                        <rect key="frame" x="20" y="20" width="574.5" height="400"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fP-ue-wZy">
+                                <rect key="frame" x="0.0" y="0.0" width="574.5" height="310.5"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test , test, test, test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ry1-oC-3zs">
+                                <rect key="frame" x="0.0" y="320.5" width="127" height="16"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="14"/>
+                                <color key="textColor" systemColor="tintColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asked on Sep 30th 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pu-ch-DRY">
+                                <rect key="frame" x="0.0" y="346.5" width="137.5" height="13.5"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xBH-Vq-8dE">
+                                <rect key="frame" x="0.0" y="370" width="574.5" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCM-sa-EFf">
+                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="30"/>
+                                        <color key="tintColor" red="0.31318073909999999" green="0.73926072679999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="arrowtriangle.up.circle" catalog="system" imagePlacement="leading" title="162" imagePadding="5">
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8z-dp-pcb">
+                                        <rect key="frame" x="172.5" y="0.0" width="180" height="30"/>
+                                        <color key="tintColor" red="0.31318073909999999" green="0.73926072679999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ellipsis.bubble" catalog="system" imagePlacement="leading" title="333" imagePadding="5">
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgU-uQ-Qto">
+                                        <rect key="frame" x="357.5" y="0.0" width="217" height="30"/>
+                                        <color key="tintColor" red="0.31318073909999999" green="0.73926072679999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="eye" catalog="system" title="141 k" imagePadding="5">
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CBk-SF-QrJ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xBH-Vq-8dE" secondAttribute="trailing" id="uZL-QY-Dru"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="izZ-wT-8Ea" secondAttribute="bottom" constant="20" id="KPZ-EX-1Zz"/>
+                    <constraint firstAttribute="trailing" secondItem="izZ-wT-8Ea" secondAttribute="trailing" constant="20" id="NxO-Hf-zm8"/>
+                    <constraint firstItem="izZ-wT-8Ea" firstAttribute="leading" secondItem="j6c-9M-guY" secondAttribute="leading" constant="20" id="XK2-Tw-W41"/>
+                    <constraint firstItem="izZ-wT-8Ea" firstAttribute="top" secondItem="j6c-9M-guY" secondAttribute="top" constant="20" id="tw0-Q3-xFK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="questionComments" destination="p8z-dp-pcb" id="WIK-Tk-a9M"/>
+                <outlet property="questionTags" destination="ry1-oC-3zs" id="wDH-xk-489"/>
+                <outlet property="questionTime" destination="0pu-ch-DRY" id="OMj-wZ-8vo"/>
+                <outlet property="questionTitle" destination="1fP-ue-wZy" id="wh0-9A-A4A"/>
+                <outlet property="questionUpvote" destination="bCM-sa-EFf" id="QdI-md-3jH"/>
+                <outlet property="questionViews" destination="vgU-uQ-Qto" id="Q1d-Lf-5du"/>
+            </connections>
+            <point key="canvasLocation" x="116.66666666666667" y="117.1875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrowtriangle.up.circle" catalog="system" width="128" height="121"/>
+        <image name="ellipsis.bubble" catalog="system" width="128" height="110"/>
+        <image name="eye" catalog="system" width="128" height="81"/>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
