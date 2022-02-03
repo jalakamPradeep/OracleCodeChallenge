@@ -57,6 +57,7 @@ final class ViewController: UIViewController, UINavigationControllerDelegate {
         // Subscribe to the view model to update the tableView
         cancellable = viewModel.$items.sink(receiveValue:{
             [weak self] items in
+            // No need to call this in main thread , athis is handled in NetworkManager
             self?.refreshControl.endRefreshing()
             self?.activityIndicator.stopAnimating()
             self?.questionItems = items
@@ -67,6 +68,7 @@ final class ViewController: UIViewController, UINavigationControllerDelegate {
         errorCancellable = viewModel.$errorString.sink(receiveValue: {
             [weak self] errorString in
             if !errorString.isEmpty {
+                // No need to call this in main thread , athis is handled in NetworkManager
                 self?.refreshControl.endRefreshing()
                 self?.activityIndicator.stopAnimating()
                 let alert = UIAlertController(title: nil, message: errorString,         preferredStyle: .alert)

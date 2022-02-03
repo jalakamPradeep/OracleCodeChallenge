@@ -53,6 +53,7 @@ final class QuestionViewController: UIViewController, UINavigationControllerDele
         activityIndicator.startAnimating()
         cancellable = viewModel.$items.sink(receiveValue:{
             [weak self] items in
+            // No need to call this in main thread , athis is handled in NetworkManager
             self?.activityIndicator.stopAnimating()
             self?.questionItem = items.first
             self?.tableView.reloadData()
