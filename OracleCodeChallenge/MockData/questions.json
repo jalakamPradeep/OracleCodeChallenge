@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "tags": [
+        "swift",
+        "swiftui",
+        "swift5"
+      ],
+      "owner": {
+        "reputation": 4153,
+        "user_id": 7282573,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/da183c76c0a1f20d6414b809edd9e455?s=256&d=identicon&r=PG&f=1",
+        "display_name": "Half",
+        "link": "https://stackoverflow.com/users/7282573/half"
+      },
+      "is_answered": true,
+      "view_count": 52757,
+      "accepted_answer_id": 56433885,
+      "answer_count": 13,
+      "score": 346,
+      "last_activity_date": 1634238672,
+      "creation_date": 1559591221,
+      "last_edit_date": 1634238672,
+      "question_id": 56433665,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://stackoverflow.com/questions/56433665/what-is-the-some-keyword-in-swiftui",
+      "title": "What is the &quot;some&quot; keyword in Swift(UI)?"
+    }
+  ],
+  "has_more": true,
+  "quota_max": 300,
+  "quota_remaining": 290
+}

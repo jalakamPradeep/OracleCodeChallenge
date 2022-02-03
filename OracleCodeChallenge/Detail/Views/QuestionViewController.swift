@@ -9,16 +9,16 @@ import Foundation
 import UIKit
 import Combine
 
-class QuestionViewController: UIViewController, UINavigationControllerDelegate {
+final class QuestionViewController: UIViewController, UINavigationControllerDelegate {
     // MARK: Outlets
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     //MARK: vars
     var questionItem: Item?
-    var viewModel = HomeViewModel() //Init home view model
-    var cancellable: AnyCancellable?
-    var errorCancellable: AnyCancellable?
+    private var viewModel = HomeViewModel() //Init home view model
+    private var cancellable: AnyCancellable?
+    private var errorCancellable: AnyCancellable?
     
     // MARK: View Life cycle
     override func viewDidLoad() {
@@ -29,7 +29,7 @@ class QuestionViewController: UIViewController, UINavigationControllerDelegate {
     
     // MARK: Support Functions
     
-    func configureTableView() {
+    private func configureTableView() {
         // helps to tableview cell automatically adjust the size as per it's content
         tableView.estimatedRowHeight = 50.0
         tableView.rowHeight = UITableView.automaticDimension
@@ -40,7 +40,7 @@ class QuestionViewController: UIViewController, UINavigationControllerDelegate {
         tableView.register(UINib(nibName: String(describing: QuestionDescriptionCell.self), bundle: nil), forCellReuseIdentifier: String(describing: QuestionDescriptionCell.self))
     }
     
-    func fetchData() {
+    private func fetchData() {
         if let questionId = questionItem?.question_id {
             let baseUrlString = "https://api.stackexchange.com/2.2/questions/\(questionId)?site=stackoverflow&order=desc&sort=votes&tagged=swiftui&pagesize=10&filter=!9_bDDxJY5"
             viewModel.getHomeData(baseUrl: baseUrlString)
@@ -48,7 +48,7 @@ class QuestionViewController: UIViewController, UINavigationControllerDelegate {
         }
     }
     
-    func configureData() {
+    private func configureData() {
         // Subscribe to the view model to update the tableView
         activityIndicator.startAnimating()
         cancellable = viewModel.$items.sink(receiveValue:{

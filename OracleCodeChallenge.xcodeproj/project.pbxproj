@@ -28,6 +28,8 @@
 		0272026727ABC60B002A17F0 /* HomeViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272026627ABC60A002A17F0 /* HomeViewModal.swift */; };
 		0272026927ABDDE3002A17F0 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272026827ABDDE3002A17F0 /* DataExtension.swift */; };
 		0272026B27ABDE01002A17F0 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272026A27ABDE01002A17F0 /* StringExtension.swift */; };
+		0272027027AC4E70002A17F0 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272026F27AC4E70002A17F0 /* MockURLProtocol.swift */; };
+		0272027227AC4E77002A17F0 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 0272027127AC4E77002A17F0 /* questions.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		0272026627ABC60A002A17F0 /* HomeViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModal.swift; sourceTree = "<group>"; };
 		0272026827ABDDE3002A17F0 /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
 		0272026A27ABDE01002A17F0 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		0272026F27AC4E70002A17F0 /* MockURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		0272027127AC4E77002A17F0 /* questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 		0272021727AB991F002A17F0 /* OracleCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				0272026E27AC4E5C002A17F0 /* MockData */,
 				0272026D27AC4392002A17F0 /* Generic Modal */,
 				0272026C27AC4370002A17F0 /* GenericViewModal */,
 				0272025F27ABC03B002A17F0 /* Manager */,
@@ -243,6 +248,15 @@
 			path = "Generic Modal";
 			sourceTree = "<group>";
 		};
+		0272026E27AC4E5C002A17F0 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				0272027127AC4E77002A17F0 /* questions.json */,
+				0272026F27AC4E70002A17F0 /* MockURLProtocol.swift */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -350,6 +364,7 @@
 				0272025B27ABB78E002A17F0 /* QuestionDescriptionCell.xib in Resources */,
 				0272025427AB9EBF002A17F0 /* QuestionViewCell.xib in Resources */,
 				0272022527AB9921002A17F0 /* LaunchScreen.storyboard in Resources */,
+				0272027227AC4E77002A17F0 /* questions.json in Resources */,
 				0272022227AB9921002A17F0 /* Assets.xcassets in Resources */,
 				0272022027AB991F002A17F0 /* Main.storyboard in Resources */,
 			);
@@ -383,6 +398,7 @@
 				0272025627ABB652002A17F0 /* QuestionViewController.swift in Sources */,
 				0272026527ABC337002A17F0 /* Owner.swift in Sources */,
 				0272025927ABB77C002A17F0 /* QuestionDescriptionCell.swift in Sources */,
+				0272027027AC4E70002A17F0 /* MockURLProtocol.swift in Sources */,
 				0272026327ABC2E2002A17F0 /* Items.swift in Sources */,
 				0272026127ABC068002A17F0 /* NetworkManager.swift in Sources */,
 				0272021D27AB991F002A17F0 /* ViewController.swift in Sources */,
