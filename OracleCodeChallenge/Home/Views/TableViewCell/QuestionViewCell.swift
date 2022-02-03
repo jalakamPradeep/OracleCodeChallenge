@@ -17,4 +17,18 @@ class QuestionViewCell: UITableViewCell {
     @IBOutlet weak var questionUpvote: UIButton!
     @IBOutlet weak var questionComments: UIButton!
     @IBOutlet weak var questionViews: UIButton!
+    
+    func cellConfigure(item: Item) {
+        questionTitle.text = item.title.htmlToString
+        item.tags.forEach({ tag in
+            questionTags.text =  (questionTags.text ?? "") + tag + ", "
+        })
+        
+        questionTime.text = "Asked on" + item.last_activity_date.localDateString
+        questionViews.setTitle(item.view_count.roundedWithAbbreviations, for: .normal)
+        questionComments.setTitle(String(item.answer_count), for: .normal)
+        questionUpvote.setTitle(String(item.score), for: .normal)
+    }
+    
+    
 }

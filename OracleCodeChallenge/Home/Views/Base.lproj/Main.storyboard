@@ -25,18 +25,24 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="fbz-BA-Dno"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="HPx-IS-FZ4">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.88198359329999998" green="0.88198359329999998" blue="0.88198359329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="HPx-IS-FZ4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1Wv-it-Iqo"/>
                             <constraint firstItem="3q7-Ko-2fm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3Qx-0d-frd"/>
                             <constraint firstItem="3q7-Ko-2fm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3sl-ev-82O"/>
                             <constraint firstAttribute="trailing" secondItem="3q7-Ko-2fm" secondAttribute="trailing" id="Eft-gI-gcf"/>
                             <constraint firstAttribute="bottom" secondItem="3q7-Ko-2fm" secondAttribute="bottom" id="lnI-cA-iWl"/>
+                            <constraint firstItem="HPx-IS-FZ4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rwE-AY-R5p"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Top Questions" id="pFw-Cx-aDM"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="HPx-IS-FZ4" id="fM4-Q3-qCj"/>
                         <outlet property="tableView" destination="3q7-Ko-2fm" id="w1d-d5-5Ze"/>
                     </connections>
                 </viewController>

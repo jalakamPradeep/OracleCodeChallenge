@@ -11,6 +11,7 @@ import UIKit
 class QuestionViewController: UIViewController, UINavigationControllerDelegate {
     // MARK: Outlets
     @IBOutlet weak var tableView: UITableView!
+    var questionItem: Item?
     
     // MARK: View Life cycle
     override func viewDidLoad() {
@@ -45,7 +46,7 @@ extension QuestionViewController : UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // use if condition to check for row 1 as number of rows is fixed
-        if indexPath.row == 0, let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: QuestionViewCell.self)) as? QuestionViewCell {
+        if indexPath.row == 0, let questionItem = questionItem, let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: QuestionViewCell.self)) as? QuestionViewCell {
             cell.accessoryType = .none // as we are reusing the cell from main view we should remove accessory type(the arrow image)
             return cell
         } else {
